@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+RUN apt-get update && apt-get install -y \
+	python
 
 FROM adoptopenjdk/openjdk8:jdk8u202-b08-alpine
 LABEL maintainer="Adam Kunicki <adam@streamsets.com>"
